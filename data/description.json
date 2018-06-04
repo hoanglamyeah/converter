@@ -1,0 +1,442 @@
+{
+    "color": {
+        "name": "Color",
+        "slug": "color",
+        "data": {
+            "hex": {
+                "id": "hex",
+                "name": "Hexadecimal",
+                "des": "In mathematics and computing, hexadecimal (also base 16, or hex) is a positional numeral system with a radix, or base, of 16. It uses sixteen distinct symbols, most often the symbols 0–9 to represent values zero to nine, and A–F (or alternatively a–f) to represent values ten to fifteen."
+            },
+            "rgb": {
+                "id": "rgb",
+                "name": "RGB",
+                "des": "The RGB color model is an additive color model in which red, green and blue light are added together in various ways to reproduce a broad array of colors. The name of the model comes from the initials of the three additive primary colors, red, green, and blue."
+            },
+            "hsl": {
+                "id": "hsl",
+                "name": "HSL",
+                "des": "HSL stands for hue, saturation, and lightness - and represents a cylindrical-coordinate representation of colors. Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. Saturation is a percentage value; 0% means a shade of gray and 100% is the full color."
+            },
+            "hsv": {
+                "id": "hsv",
+                "name": "HSV",
+                "des": "This color space describes colors (hue or tint) in terms of their shade (saturation or amount of gray) and their brightness value. Note: Some color pickers (like the one in Adobe Photoshop) use the acronym HSB, which substitutes the term \"Brightness\" for value, but HSV and HSB are the same color model."
+            },
+            "cmyk": {
+                "id": "cmyk",
+                "name": "CMYK",
+                "des": "The CMYK color model is a subtractive color model, used in color printing, and is also used to describe the printing process itself. CMYK refers to the four inks used in some color printing: cyan, magenta, yellow, and key."
+            }
+        }
+    },
+    "length": {
+        "name": "Length",
+        "slug": "length",
+        "primary": 1,
+        "data": {
+            "m": {
+                "id": "m",
+                "name": "Meter",
+                "value": 1,
+                "des": "The metre or meter is the base unit of length in some metric systems, including the International System of Units. The SI unit symbol is m. The metre is defined as the length of the path travelled by light in a vacuum in second."
+            },
+            "cm": {
+                "id": "cm",
+                "name": "Centimetre",
+                "value": 100,
+                "des": "A centimetre or centimeter is a unit of length in the metric system, equal to one hundredth of a metre, centi being the SI prefix for a factor of. "
+            },
+            "dm": {
+                "id": "dm",
+                "name": "Decimetre",
+                "value": 10,
+                "des": "The decimetre is a unit of length in the metric system, equal to one tenth of a metre, ten centimetres or 1/0.254 inches. The c is pronounced, unlike in decametre."
+            },
+            "mm": {
+                "id": "mm",
+                "name": "Millimetre",
+                "value": 1000,
+                "des": "The millimetre or millimeter is a unit of length in the metric system, equal to one thousandth of a metre, which is the SI base unit of length. Therefore, there are one thousand millimetres in a metre. There are ten millimetres in a centimetre."
+            },
+            "in": {
+                "id": "in",
+                "name": "Inch",
+                "value": 39.3701,
+                "des": "The inch is a unit of length in the imperial and United States customary systems of measurement now formally equal to ​¹⁄₃₆ yard but usually understood as ​¹⁄₁₂ of a foot."
+            },
+            "yd": {
+                "id": "yd",
+                "name": "Yard",
+                "value": 1.09361,
+                "des": "The yard is an English unit of length, in both the British imperial and US customary systems of measurement, that comprises 3 feet or 36 inches. It is by international agreement in 1959 standardized as exactly 0.9144 meters."
+            },
+            "ft": {
+                "id": "ft",
+                "name": "Feet",
+                "value": 3.28084,
+                "des": "The foot is a unit of length in the imperial and US customary systems of measurement. Since 1959, both units have been defined by international agreement as equivalent to 0.3048 meters exactly. "
+            },
+            "mile": {
+                "id": "mile",
+                "name": "Mile",
+                "value": 0.000621371,
+                "des": "The mile is an English unit of length of linear measure equal to 5,280 feet, or 1,760 yards, and standardised as exactly 1,609.344 metres by international agreement in 1959."
+            },
+            "rod": {
+                "id": "rod",
+                "name": "Rod",
+                "value": 0.198839,
+                "des": "The rod or perch or pole is a surveyor’s tool and unit of length equal to ​5 ¹⁄₂ yards, 16​¹⁄₂ feet, ​¹⁄₃₂₀ of a statute mile or one-fourth of a surveyor's chain and 5.0292 meters."
+            },
+            "μm": {
+                "id": "μm",
+                "name": "Micrometre",
+                "value": 1000000,
+                "des": "The micrometre or micrometer, also commonly known as a micron, is an SI derived unit of length equaling 1×10−6 metre; that is, one millionth of a metre."
+            },
+            "point": {
+                "id": "point",
+                "name": "Point",
+                "value": 0.00283446712,
+                "des": "In typography, the point is the smallest unit of measure. It is used for measuring font size, leading, and other items on a printed page. The size of the point has varied throughout the history of printing."
+            }
+        }
+    },
+    "weight": {
+        "name": "Weight",
+        "slug": "weight",
+        "data": {
+            "g": {
+                "id": "g",
+                "name": "Gram",
+                "value": 1,
+                "des": "The gram is a metric system unit of mass. Originally defined as \"the absolute weight of a volume of pure water equal to the cube of the hundredth part of a metre [1 cm³], and at the temperature of melting ice\"."
+            },
+            "kg": {
+                "id": "kg",
+                "name": "Kilogram",
+                "value": 0.001,
+                "des": "The kilogram or kilogramme (symbol: kg) is the base unit of mass in the International System of Units (SI), and is defined as being equal to the mass of the International Prototype of the Kilogram (IPK, also known as \"Le Grand K\" or \"Big K\"), a cylinder of platinum-iridium alloy stored by the International Bureau of Weights and Measures at Saint-Cloud, France."
+            },
+            "t": {
+                "id": "t",
+                "name": "Ton",
+                "value": 0.000001,
+                "des": "In the United States and Canada a ton is defined to be 2,000 pounds (907 kg). Where confusion is possible, the 2240 lb ton is called \"long ton\" and the 2000 lb ton \"short ton\"; the tonne is distinguished by its spelling, but usually pronounced the same as ton, hence the US term \"metric ton\"."
+            },
+            "mg": {
+                "id": "mg",
+                "name": "Milligram",
+                "value": 1000,
+                "des": ""
+            },
+            "mcg": {
+                "id": "mcg",
+                "name": "Microgram",
+                "value": 1000000,
+                "des": "In the metric system, a microgram or microgramme (μg; the recommended symbol in the United States when communicating medical information is mcg) is a unit of mass equal to one millionth (1×10−6) of a gram. The unit symbol is μg according to the International System of Units."
+            },
+            "st": {
+                "id": "st",
+                "name": "Stone",
+                "value": 0.000157473,
+                "des": "The stone or stone weight (abbreviation: st.) is an English and imperial unit of mass now equal to 14 pounds (6.35029318 kg)."
+            },
+            "lbs": {
+                "id": "lbs",
+                "name": "Pound",
+                "value": 0.002204623,
+                "des": "The pound or pound-mass is a unit of mass used in the imperial, United States customary and other systems of measurement. Various definitions have been used; the most common today is the international avoirdupois pound, which is legally defined as exactly 0.45359237 kilograms, and which is divided into 16 avoirdupois ounces."
+            },
+            "oz": {
+                "id": "oz",
+                "name": "Ounce",
+                "value": 0.03527396,
+                "des": "The ounce (abbreviated oz; apothecary symbol: ℥) is a unit of mass, weight, or volume used in most British derived customary systems of measurement. The common avoirdupois ounce (approximately 28.3 g) is ​1⁄16 of a common avoirdupois pound; this is the United States customary and British imperial ounce."
+            },
+            "ct": {
+                "id": "ct",
+                "name": "Carat",
+                "value": 5,
+                "des": "The carat (ct) (not to be confused with the karat, sometimes spelled carat, a unit of purity of gold alloys), is a unit of mass equal to 200 mg (0.2 g; 0.007055 oz) and is used for measuring gemstones and pearls. "
+            }
+        }
+    },
+    "angle": {
+        "name": "Angle",
+        "slug": "angle",
+        "data": {
+            "rad": {
+                "id": "rad",
+                "name": "Radian",
+                "value": 1,
+                "des": "The radian is the SI unit for measuring angles, and is the standard unit of angular measure used in many areas of mathematics."
+            },
+            "circle": {
+                "id": "circle",
+                "name": "Circle",
+                "value": 0.159154943,
+                "des": "In mathematics, a unit circle is a circle with a radius of one. Frequently, especially in trigonometry, the unit circle is the circle of radius one centered at the origin (0, 0) in the Cartesian coordinate system in the Euclidean plane."
+            },
+            "deg": {
+                "id": "deg",
+                "name": "Degree",
+                "value": 57.295779513,
+                "des": "A degree (in full, a degree of arc, arc degree, or arcdegree), usually denoted by ° (the degree symbol), is a measurement of a plane angle, defined so that a full rotation is 360 degrees."
+            },
+            "grad": {
+                "id": "grad",
+                "name": "Gradian",
+                "value": 63.661977237,
+                "des": "The gradian is a unit of measurement of an angle, equivalent to of a turn, of a degree, or of a radian. Consequently, 90 degrees is equal to 100 gradians. It is also known as gon, grad, or grade."
+            },
+            "mil": {
+                "id": "mil",
+                "name": "Milliradian",
+                "value": 1018.591636,
+                "des": "A mil, short for milliradian, is equal to 1/1000 of a radian. There are 6283 in a full revolution/circle. The mil is commonly used to measure adjustment of sights and scopes of firearms."
+            },
+            "minute": {
+                "id": "minute",
+                "name": "Minute",
+                "value": 3437.746770785,
+                "des": "A Minute of Angle (MOA) is an angular measurement. A MOA is 1/60th of a degree. 1 MOA spreads about 1″ per 100 yards. ( actually 1.047″) 1 MOA is a different size at different distances, 8″ at 800 yards is still just 1 MOA."
+            },
+            "octant": {
+                "id": "octant",
+                "name": "Octant",
+                "value": 1.27,
+                "des": "1 octant is exactly 45° (degrees of arc). In terms of the SI unit radians this is approximately 0.785 398 rad."
+            },
+            "second": {
+                "id": "second",
+                "name": "Second",
+                "value": 206264.8062471,
+                "des": "The second of arc (or arcsecond, or just second) is 1 / 60 of a minute of arc and 1 / 3600 of a degree."
+            },
+            "turn": {
+                "id": "turn",
+                "name": "Turn",
+                "value": 0.159154943,
+                "des": "A turn is a unit of plane angle measurement equal to 2π radians, 360 degrees or 400 gradians. A turn is also referred to as a cycle (abbreviated cyc), revolution (abbreviated rev), complete rotation (abbreviated rot) or full circle."
+            },
+            "quadrant": {
+                "id": "quadrant",
+                "name": "Quadrant",
+                "value": 0.636619772,
+                "des": "One quadrant is also known as a right angle. The quadrant is the unit used in Euclid's Elements. In German the symbol ∟ has been used to denote a quadrant."
+            }
+        }
+    },
+    "time": {
+        "name": "Time",
+        "slug": "time",
+        "data": {
+            "d": {
+                "id": "d",
+                "name": "Day",
+                "value": "1",
+                "des": "A day, a unit of time, is approximately the period of time during which the Earth completes one rotation with respect to the Sun (solar day). In 1960, the second was redefined in terms of the orbital motion of the Earth in year 1900, and was designated the SI base unit of time. The unit of measurement \"day\", was redefined as 86 400 SI seconds and symbolized d. In 1967, the second and so the day were redefined by atomic electron transition."
+            },
+            "w": {
+                "id": "w",
+                "name": "Week",
+                "value": "0.142857",
+                "des": "A week is a time unit equal to seven days. It is the standard time period used for cycles of rest days in most parts of the world, mostly alongside—although not strictly part of—the Gregorian calendar."
+            },
+            "M": {
+                "id": "M",
+                "name": "Month",
+                "value": "0.0328767",
+                "des": "A month is a unit of time, used with calendars, which is approximately as long as a natural period related to the motion of the Moon; month and Moon are cognates. The traditional concept arose with the cycle of Moon phases; such months (lunations) are synodic months and last approximately 29.53 days. "
+            },
+            "y": {
+                "id": "y",
+                "name": "Year",
+                "value": "0.00273973",
+                "des": "The Analemma illustrates the changing position of the Sun over the course of the year, as viewed from a fixed time of day. A year is the orbital period of the Earth moving in its orbit around the Sun. Due to the Earth's axial tilt, the course of a year sees the passing of the seasons, marked by change in weather, the hours of daylight, and, consequently, vegetation and soil fertility."
+            },
+            "h": {
+                "id": "h",
+                "name": "Hour",
+                "value": "24",
+                "des": "An hour (symbol: h; also abbreviated hr.) is a unit of time conventionally reckoned as ​1⁄24 of a day and scientifically reckoned as 3,599–3,601 seconds, depending on conditions."
+            },
+            "m": {
+                "id": "m",
+                "name": "Minute",
+                "value": "1440",
+                "des": "The minute is a unit of time or angle. As a unit of time, the minute is equal to ​1⁄60 (the first sexagesimal fraction[1]) of an hour, or 60 seconds. In the UTC time standard, a minute on rare occasions has 61 seconds, a consequence of leap seconds (there is a provision to insert a negative leap second, which would result in a 59-second minute, but this has never happened in more than 40 years under this system)."
+            },
+            "s": {
+                "id": "s",
+                "name": "Second",
+                "value": "86400",
+                "des": "The second is the SI base unit of time, commonly understood and historically defined as 1/86,400 of a day – this factor derived from the division of the day first into 24 hours, then to 60 minutes and finally to 60 seconds each."
+            },
+            "decade": {
+                "id": "decade",
+                "name": "Decade",
+                "value": "0.000273973",
+                "des": "A decade is a period of 10 years. The word is derived (via French and Latin) from the Ancient Greek: δεκάς (/ðɛkˈɑːs/, transliteration=dekas), which means a group of ten. Other words for spans of years also come from Latin: biennium (2 years), triennium (3 years), quadrennium (4 years), lustrum (5 years), century (100 years), millennium (1000 years)."
+            },
+            "century": {
+                "id": "century",
+                "name": "Century",
+                "value": "0.0000273973",
+                "des": "A century (from the Latin centum, meaning one hundred; abbreviated c.) is a period of 100 years. Centuries are numbered ordinally in English and many other languages. A centenary is a hundredth anniversary, or a celebration of this, typically the remembrance of an event which took place a hundred years earlier."
+            }
+        }
+    },
+    "data": {
+        "name": "Data",
+        "slug": "data",
+        "data": {
+            "MB": {
+                "id": "MB",
+                "name": "Megabyte",
+                "value": 1024,
+                "des": "The megabyte is a multiple of the unit byte for digital information. Its recommended unit symbol is MB. The unit prefix mega is a multiplier of 1000000 (106) in the International System of Units (SI Units). Therefore, one megabyte = one million bytes of information."
+            },
+            "KB": {
+                "id": "KB",
+                "name": "Kilobyte",
+                "value": 1048576,
+                "des": "The kilobyte (abbreviated \"K\" or \"KB\") is the smallest unit of measurement greater than a byte. It precedes the megabyte, which contains 1,000,000 bytes. While one kilobyte is technically 1,000 bytes, kilobytes are often used synonymously with kibibytes, which contain 1,024 bytes."
+            },
+            "B": {
+                "id": "B",
+                "name": "Byte",
+                "value": 1073741824,
+                "des": "The byte (/baɪt/) is a unit of digital information that most commonly consists of eight bits. Historically, the byte was the number of bits used to encode a single character of text in a computer and for this reason it is the smallest addressable unit of memory in many computer architectures."
+            },
+            "b": {
+                "id": "b",
+                "name": "Bit",
+                "value": 8589934592,
+                "des": "A bit (short for binary digit) is the smallest unit of data in a computer. A bit has a single binary value, either 0 or 1. Although computers usually provide instructions that can test and manipulate bits, they generally are designed to store data and execute instructions in bit multiples called bytes."
+            },
+            "GB": {
+                "id": "GB",
+                "name": "Gigabyte",
+                "value": 1,
+                "des": "The gigabyte (/ˈɡɪɡəbaɪt/ GIG-ə-byt or /ˈdʒɪɡəbaɪt/) is a multiple of the unit byte for digital information. The prefix giga means 109 in the International System of Units (SI). Therefore, one gigabyte is 1000000000bytes. The unit symbol for the gigabyte is GB."
+            },
+            "TB": {
+                "id": "TB",
+                "name": "Terabyte",
+                "value": 0.0009765625,
+                "des": "The terabyte is a multiple of the unit byte for digital information. The prefix tera represents the fourth power of 1000, and means 1012 in the International System of Units (SI), and therefore one terabyte is one trillion (short scale) bytes. The unit symbol for the terabyte is TB."
+            },
+            "PB": {
+                "id": "PB",
+                "name": "Petabyte",
+                "value": 0.00000095367431640625,
+                "des": "The petabyte is a multiple of the unit byte for digital information. The prefix peta indicates the fifth power of 1000 and means 1015 in the International System of Units (SI), and therefore 1 petabyte is one quadrillion (short scale) bytes, or 1 billiard (long scale) bytes. The unit symbol for the petabyte is PB."
+            }
+        }
+    },
+    "temperature": {
+        "name": "Temperature",
+        "slug": "temperature",
+        "data": {
+            "K": {
+                "id": "K",
+                "name": "kelvin",
+                "value": 274.15,
+                "des": "The kelvin is the primary unit of temperature measurement in the physical sciences, but is often used in conjunction with the degree Celsius, which has the same magnitude. The definition implies that absolute zero (0 K) is equivalent to −273.15 °C (−459.67 °F)."
+            },
+            "C": {
+                "id": "C",
+                "name": "Celsius",
+                "value": 1,
+                "des": "The degree Celsius (symbol: °C) can refer to a specific temperature on the Celsius scale as well as a unit to indicate a temperature interval, a difference between two temperatures or an uncertainty."
+            },
+            "R": {
+                "id": "R",
+                "name": "Rankine",
+                "value": 493.47,
+                "des": "Zero on both the Kelvin and Rankine scales is absolute zero, but a temperature difference of one Rankine degree is defined as equal to one Fahrenheit degree, rather than the Celsius degree used on the Kelvin scale."
+            },
+            "r": {
+                "id": "r",
+                "name": "Reaumur",
+                "value": 0.8,
+                "des": "The Réaumur scale French: [ʁe.o.myːʁ] (°Ré, °Re, °r), also known as the \"octogesimal division\", is a temperature scale for which the freezing and boiling points of water are defined as 0 and 80 degrees respectively."
+            },
+            "F": {
+                "id": "F",
+                "name": "Fahrenheit",
+                "value": 33.8,
+                "des": "The Fahrenheit scale is a temperature scale based on one proposed in 1724 by Dutch-German-Polish physicist Daniel Gabriel Fahrenheit (1686–1736). It uses the degree Fahrenheit (symbol: °F) as the unit. Several accounts of how he originally defined his scale exist."
+            }
+        }
+    },
+    "speed": {
+        "name": "Speed",
+        "slug": "speed",
+        "data": {
+            "mph": {
+                "id": "mph",
+                "name": "Miles per hour",
+                "value": 0.0006213712,
+                "des": "Miles per hour (abbreviated mph, MPH or mi/h) is an imperial and United States customary unit of speed expressing the number of statute miles covered in one hour. Miles per hour is the standard unit for speed limits in the United States, the United Kingdom and Antigua & Barbuda; all other countries use kilometres per hour (km/h)."
+            },
+            "miph": {
+                "id": "miph",
+                "name": "Meter per hour",
+                "value": 1,
+                "des": "Metre per hour (American spelling: meter per hour) is a metric unit of both speed (scalar) and velocity (Vector (geometry)). Its symbol is m/h or m. h−1 (not to be confused with the imperial unit symbol mph. By definition, an object travelling at a speed of 1 m/h for an hour would move 1 metre."
+            },
+            "mpm": {
+                "id": "mpm",
+                "name": "Meters per minute",
+                "value": 0.0166666667,
+                "des": "Meter per minute is a speed measurement unit. A meter per minute (m/min) is a derived metric SI (System International) measurement unit of speed or velocity with which to measure how many meters traveled per one minute.OT? 1 meter per minute = 1.66666667 centimeter per second."
+            },
+            "mps": {
+                "id": "mps",
+                "name": "Meters per second",
+                "value": 0.0002777778,
+                "des": "Meters per second. The SI measurement of speed and velocity. This is the number of meters travelled in one second of time. The accompanying acceleration unit is meters per second per second (m/s²)."
+            },
+            "kph": {
+                "id": "kph",
+                "name": "Kilometers per hour",
+                "value": 0.001,
+                "des": "The kilometre per hour (American English: kilometer per hour) is a unit of speed, expressing the number of kilometres travelled in one hour."
+            },
+            "kpm": {
+                "id": "kpm",
+                "name": "Kilometers per minute",
+                "value": 0.0000166667,
+                "des": "The Kilometers per minute (American English: kilometers per minute) is a unit of speed, expressing the number of kilometres travelled in one minute."
+            },
+            "kps": {
+                "id": "kps",
+                "name": "Kilometers per second",
+                "value": 0.00000002777777777,
+                "des": "A kilometer per second (km/sec) is a derived metric SI (System International) measurement unit of speed or velocity with which to measure how many kilometers traveled per one second.OT? 1 kilometer per second = 100 000 centimeters per second."
+            },
+            "mmph": {
+                "id": "mmph",
+                "name": "Millimeter per hour",
+                "value": 1000,
+                "des": "Millimeter per hour. The SI measurement of speed and velocity. This is the number of meters travelled in one second of time. The accompanying acceleration unit is millimeters per hour (mm/s)."
+            },
+            "mmpp": {
+                "id": "mmpm",
+                "name": "Millimeter per minute",
+                "value": 16.666666667,
+                "des": "Millimeter per minute. The SI measurement of speed and velocity. This is the number of meters travelled in one second of time. The accompanying acceleration unit is millimeters per minute (mm/s)."
+            },
+            "mmps": {
+                "id": "mmps",
+                "name": "Millimeter per second",
+                "value": 0.2777777778,
+                "des": "Millimeter per second. The SI measurement of speed and velocity. This is the number of meters travelled in one second of time. The accompanying acceleration unit is millimeters per second (mm/s)."
+            }
+        }
+    }
+}
