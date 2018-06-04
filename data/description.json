@@ -438,5 +438,35 @@
                 "des": "Millimeter per second. The SI measurement of speed and velocity. This is the number of meters travelled in one second of time. The accompanying acceleration unit is millimeters per second (mm/s)."
             }
         }
+    },
+    "number": {
+        "name": "Number",
+        "slug": "number",
+        "data": {
+            "dec": {
+                "name": "Decimal",
+                "id": "dec",
+                "value": 1,
+                "des": "The way of denoting numbers in the decimal system is often referred to as Decimal notation. A decimal numeral, or just decimal, or, improperly decimal number, refers generally to the notation of a number in the decimal system, which contains a decimal separator (for example 10.00 or 3.14159)."
+            },
+            "hex": {
+                "name": "Hexadecimal",
+                "id": "hex",
+                "value": 1,
+                "des": "In mathematics and computing, hexadecimal (also base 16, or hex) is a positional numeral system with a radix, or base, of 16. It uses sixteen distinct symbols, most often the symbols 0–9 to represent values zero to nine, and A–F (or alternatively a–f) to represent values ten to fifteen."
+            },
+            "bin": {
+                "name": "Binary",
+                "id": "bin",
+                "value": 1,
+                "des": "In mathematics and digital electronics, a binary number is a number expressed in the base-2 numeral system or binary numeral system, which uses only two symbols: typically 0 (zero) and 1 (one)."
+            },
+            "oct": {
+                "name": "Octal",
+                "id": "oct",
+                "value": 1,
+                "des": "The octal numeral system, or oct for short, is the base-8 number system, and uses the digits 0 to 7. Octal numerals can be made from binary numerals by grouping consecutive binary digits into groups of three (starting from the right)."
+            }
+        }
     }
 }
