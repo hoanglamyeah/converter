@@ -22,7 +22,7 @@ module.exports = {
     */
     build: {
 
-        vendor: ['vue-color', 'vue-json-tree-view'],
+        vendor: ['vue-color', 'vue-json-tree-view', 'vue-highlightjs'],
 
         extractCSS: true,
 

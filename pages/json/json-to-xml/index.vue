@@ -9,7 +9,7 @@
                     <nuxt-link to="/json">Json</nuxt-link>
                 </li>
                 <li class="is-active">
-                    <nuxt-link :to="'/json/json-viewer'" aria-current="page">Json Viewer</nuxt-link>
+                    <nuxt-link :to="'/json/json-to-xml'" aria-current="page">JSON to XML</nuxt-link>
                 </li>
             </ul>
         </nav>
@@ -23,16 +23,12 @@
                                 <textarea class="textarea is-hovered" v-model="data" placeholder="Hovered textarea">
                                 </textarea>
                             </div>
-                            <div class="box">
-                                <tree-view :data="jdata" :options="options" @change-data="updateData"></tree-view>
-                            </div>
+                            <pre v-highlightjs="xmlData"><code class="xml"></code></pre>
                         </div>
                     </div>
                 </section>
                 <section class="has-text-left">
                     <h2 class="title is-3">Definetion</h2>
-                    <h4 class="title is-5">Credit:</h4>
-                    <p>This tool use <a href="https://www.npmjs.com/package/vue-json-tree-view">vue-json-tree-view</a> by @arvidkahl</p>
                 </section>
             </div>
             <sidebar></sidebar>
@@ -41,17 +37,20 @@
 </template>
 
 <script>
+    import JSONConverter from '../../../func/Json'
+    import beautify from 'xml-beautifier'
+
     export default {
         name: "index",
 
         head() {
             return {
-                title: "Json viewer | AIConverter",
+                title: "Json to Xml Converter | AIConverter",
                 meta: [
                     {
                         hid: 'description',
                         name: 'description',
-                        content: 'You are looking for json viewer and have many results from google, you see me at here. That\'s lucky, I am here!'
+                        content: 'You are looking for json to xml converter and have many results from google, you see me at here. That\'s lucky, I am an Artificial Intelligence for json to xml converter!'
                     }
                 ]
             }
@@ -70,7 +69,15 @@
 
         computed: {
             jdata() {
-                return JSON.parse(this.data)
+                if (this.data == null || this.data === '') {
+                    return {}
+                } else {
+                    return JSON.parse(this.data)
+                }
+            },
+
+            xmlData() {
+                return beautify(JSONConverter.toXML(this.jdata))
             }
         },
 
@@ -78,12 +85,16 @@
             updateData(data) {
                 this.data = JSON.stringify(data)
             }
+        },
+
+        created() {
+            console.log(JSONConverter.toXML(this.jdata))
         }
     }
 </script>
 
 <style scoped>
-input {
-    border: 0;
-}
+    input {
+        border: 0;
+    }
 </style>

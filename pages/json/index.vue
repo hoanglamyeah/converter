@@ -25,6 +25,13 @@
                                 </nuxt-link>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <nuxt-link to="/json/json-to-xml">
+                                    JSON to XML
+                                </nuxt-link>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </section>
@@ -36,7 +43,19 @@
 
 <script>
     export default {
-        name: "index"
+        name: "index",
+        head() {
+            return {
+                title: "Json Converter | AIConverter",
+                meta: [
+                    {
+                        hid: 'description',
+                        name: 'description',
+                        content: 'You are looking for json converter and have many results from google, you see me at here. That\'s lucky, I am an Artificial Intelligence for json converter!\n'
+                    }
+                ]
+            }
+        },
     }
 </script>
 
