@@ -16,11 +16,6 @@
                 <input class="input" type="number" placeholder="0" v-model="b" @change="putData">
                 <span class="icon is-small is-left">B</span>
             </p>
-            <p class="control">
-                <button class="button">
-                    <b-icon pack="fas" icon="random" size="is-small"></b-icon>
-                </button>
-            </p>
         </div>
     </div>
 </template>

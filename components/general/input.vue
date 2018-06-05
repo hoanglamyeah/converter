@@ -6,9 +6,6 @@
         <p class="control is-expanded">
             <input class="input" type="text" placeholder="1" v-model="data">
         </p>
-        <p class="control">
-            <button class="button">Transfer</button>
-        </p>
     </div>
 </template>
 

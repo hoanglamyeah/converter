@@ -8,11 +8,6 @@
                 <input class="input" type="text" placeholder="FFFFFF" v-model="temp" @change="putData">
                 <span class="icon is-small is-left">#</span>
             </p>
-            <p class="control">
-                <button class="button">
-                    <b-icon pack="fas" icon="random" size="is-small"></b-icon>
-                </button>
-            </p>
         </div>
     </div>
 </template>

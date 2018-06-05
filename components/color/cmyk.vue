@@ -20,11 +20,6 @@
                 <input class="input" type="text" placeholder="0" v-model="k" @change="putData">
                 <span class="icon is-small is-left">K</span>
             </p>
-            <p class="control">
-                <button class="button">
-                    <i class="fas fa-random"></i>
-                </button>
-            </p>
         </div>
     </div>
 </template>
