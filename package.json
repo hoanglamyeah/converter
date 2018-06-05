@@ -26,7 +26,8 @@
     "nuxt-fontawesome": "^0.2.0",
     "read-file": "^0.2.0",
     "rgb-hex": "^2.1.0",
-    "vue-color": "^2.4.6"
+    "vue-color": "^2.4.6",
+    "vue-json-tree-view": "^2.1.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
