@@ -60,10 +60,17 @@ module.exports = {
         // Simple usage
         'nuxt-buefy',
         '@nuxtjs/axios',
+        'nuxt-robots-module',
     ],
     plugins: [
         '~plugins/component.js',
         {src: '~plugins/nuxt-codemirror-plugin.js', ssr: false}
-    ]
+    ],
+
+    'nuxt-robots-module': [
+        {
+            UserAgent: '*',
+        },
+    ],
 
 }
