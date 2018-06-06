@@ -58,7 +58,7 @@
 
         head() {
             return {
-                title: this.unit.name + ' Converter | AIConverter',
+                title: this.unit.name + ' Converter Online | AIConverter',
                 meta: [
                     {
                         hid: 'description',

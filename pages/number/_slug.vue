@@ -67,7 +67,7 @@
 
         head() {
             return {
-                title: this.title + ' | AIConverter',
+                title: this.title + ' Online | AIConverter',
                 meta: [
                     {
                         hid: 'description',

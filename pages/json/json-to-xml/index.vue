@@ -17,7 +17,7 @@
             <div class="column is-8">
                 <section class="fantastic mtb-2">
                     <div class="wrapper">
-                        <h1 class="title is-3">Json viewer</h1>
+                        <h1 class="title is-3">Json to XML</h1>
                         <div class="control">
                             <div class="mtb-2">
                                 <textarea class="textarea is-hovered" v-model="data" placeholder="Hovered textarea">
@@ -45,7 +45,7 @@
 
         head() {
             return {
-                title: "Json to Xml Converter | AIConverter",
+                title: "Json to Xml Converter Online | AIConverter",
                 meta: [
                     {
                         hid: 'description',

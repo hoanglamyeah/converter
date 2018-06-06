@@ -179,7 +179,7 @@
             },
 
             title() {
-                return this.from.name + " to " + this.to.name + " Converter"
+                return this.from.name + " to " + this.to.name + " Converter Online"
             }
         },
 

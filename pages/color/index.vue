@@ -81,7 +81,7 @@
         name: "index",
         head() {
             return {
-                title: "Color Converter | AIConverter",
+                title: "Color Converter Online | AIConverter",
                 meta: [
                     {
                         hid: 'description',

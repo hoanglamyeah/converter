@@ -48,7 +48,12 @@ module.exports = {
     },
     css: [
         '@/assets/_app.scss',
-        'buefy/lib/buefy.css'
+        'buefy/lib/buefy.css',
+        'codemirror/lib/codemirror.css',
+        // merge css
+        'codemirror/addon/merge/merge.css',
+        // theme css
+        'codemirror/theme/base16-dark.css',
     ],
 
     modules: [
@@ -56,7 +61,8 @@ module.exports = {
         'nuxt-buefy',
     ],
     plugins: [
-        '~plugins/component.js'
+        '~plugins/component.js',
+        { src: '~plugins/nuxt-codemirror-plugin.js', ssr: false }
     ]
 
 }

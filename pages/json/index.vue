@@ -32,6 +32,13 @@
                                 </nuxt-link>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <nuxt-link to="/json/json-editor">
+                                    JSON Editor
+                                </nuxt-link>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </section>
@@ -46,7 +53,7 @@
         name: "index",
         head() {
             return {
-                title: "Json Converter | AIConverter",
+                title: "Json Converter Online | AIConverter",
                 meta: [
                     {
                         hid: 'description',

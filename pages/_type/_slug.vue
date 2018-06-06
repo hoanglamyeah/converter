@@ -112,7 +112,7 @@
             },
 
             title() {
-                return this.from.name + "s to " + this.to.name + "s Converter"
+                return this.from.name + "s to " + this.to.name + "s Converter Online"
             },
 
             slug() {

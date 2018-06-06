@@ -48,7 +48,7 @@
         name: "index",
         head() {
             return {
-                title: "Number Converter | AIConverter",
+                title: "Number Converter Online | AIConverter",
                 meta: [
                     {
                         hid: 'description',
