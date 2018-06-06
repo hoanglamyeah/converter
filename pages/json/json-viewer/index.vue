@@ -18,6 +18,15 @@
                 <section class="fantastic mtb-2">
                     <div class="wrapper">
                         <h1 class="title is-3">Json viewer</h1>
+                        <div class="field has-addons">
+                            <div class="control is-expanded">
+                                <input class="input" type="text" placeholder="Url api" v-model="url">
+                            </div>
+                            <div class="control">
+                                <button class="button is-info" @click="fetchSomething">View</button>
+                            </div>
+                        </div>
+                        <p class="has-text-centered">OR</p>
                         <div class="control">
                             <div class="mtb-2">
                                 <textarea class="textarea is-hovered" v-model="data" placeholder="Hovered textarea">
@@ -32,7 +41,8 @@
                 <section class="has-text-left">
                     <h2 class="title is-3">Definetion</h2>
                     <h4 class="title is-5">Credit:</h4>
-                    <p>This tool use <a href="https://www.npmjs.com/package/vue-json-tree-view">vue-json-tree-view</a> by @arvidkahl</p>
+                    <p>This tool use <a href="https://www.npmjs.com/package/vue-json-tree-view">vue-json-tree-view</a>
+                        by @arvidkahl</p>
                 </section>
             </div>
             <sidebar></sidebar>
@@ -59,7 +69,8 @@
 
         data: () => {
             return {
-                data: "{\"widget\": { \"debug\": \"on\", \"window\": { \"title\": \"Sample Konfabulator Widget\", \"name\": \"main_window\", \"width\": 500, \"height\": 500 }, \"image\": { \"src\": \"Images/Sun.png\", \"name\": \"sun1\", \"hOffset\": 250, \"vOffset\": 250, \"alignment\": \"center\" }, \"text\": { \"data\": \"Click Here\", \"size\": 36, \"style\": \"bold\", \"name\": \"text1\", \"hOffset\": 250, \"vOffset\": 100, \"alignment\": \"center\", \"onMouseUp\": \"sun1.opacity = (sun1.opacity / 100) * 90;\" } }}",
+                data: "{\"sample\": \"This is sample\"}",
+                url: "",
                 options: {
                     maxDepth: 4,
                     rootObjectKey: "root",
@@ -70,20 +81,43 @@
 
         computed: {
             jdata() {
-                return JSON.parse(this.data)
+                try {
+                    return JSON.parse(this.data)
+                }
+                catch (e) {
+                    console.log(e)
+                    return {sample: "This is sample"}
+                }
             }
         },
 
         methods: {
             updateData(data) {
-                this.data = JSON.stringify(data)
+                try {
+                    this.data = JSON.stringify(data)
+                }
+                catch (e) {
+                    console.log(e)
+                }
+
+            },
+
+            async fetchSomething() {
+                const ip = await this.$axios.$get(this.url)
+                try {
+                    this.data = JSON.stringify(ip)
+                }
+                catch (e) {
+                    console.log(e)
+                }
+
             }
         }
     }
 </script>
 
 <style scoped>
-input {
-    border: 0;
-}
+    input {
+        border: 0;
+    }
 </style>

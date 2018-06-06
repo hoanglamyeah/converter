@@ -22,7 +22,7 @@ module.exports = {
     */
     build: {
 
-        vendor: ['vue-color', 'vue-json-tree-view', 'vue-highlightjs'],
+        vendor: ['vue-color', 'vue-json-tree-view', 'vue-highlightjs', 'vue-codemirror'],
 
         extractCSS: true,
 
@@ -59,10 +59,11 @@ module.exports = {
     modules: [
         // Simple usage
         'nuxt-buefy',
+        '@nuxtjs/axios',
     ],
     plugins: [
         '~plugins/component.js',
-        { src: '~plugins/nuxt-codemirror-plugin.js', ssr: false }
+        {src: '~plugins/nuxt-codemirror-plugin.js', ssr: false}
     ]
 
 }

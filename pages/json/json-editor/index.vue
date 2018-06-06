@@ -13,32 +13,34 @@
                 </li>
             </ul>
         </nav>
+        <div class="is-full">
+            <h1 class="title is-3">JSON Editor</h1>
+            <div class="editor">
+                <no-ssr placeholder="Loading...">
+                    <codemirror v-model="code"
+                                :options="cmOption"
+                                @cursorActivity="onCmCursorActivity"
+                                @ready="onCmReady"
+                                @focus="onCmFocus"
+                                @blur="onCmBlur">
+                    </codemirror>
+                </no-ssr>
+            </div>
+            <div class="action-bar mtb-2">
+                <button class="button" @click="format">
+                    Format
+                </button>
+                <button class="button" @click="format">
+                    Valid
+                </button>
+            </div>
+            <h4 class="title is-4 mtb-2 has-text-centered">Preview</h4>
+            <div class="box mtb-2">
+                <tree-view :data="jdata" :options="options"></tree-view>
+            </div>
+        </div>
         <div class="columns">
             <div class="column is-8">
-                <h1 class="title is-3">JSON Editor</h1>
-                <div class="editor">
-                    <no-ssr placeholder="Loading...">
-                        <codemirror v-model="code"
-                                    :options="cmOption"
-                                    @cursorActivity="onCmCursorActivity"
-                                    @ready="onCmReady"
-                                    @focus="onCmFocus"
-                                    @blur="onCmBlur">
-                        </codemirror>
-                    </no-ssr>
-                </div>
-                <div class="action-bar mtb-2">
-                    <button class="button" @click="format">
-                        Format
-                    </button>
-                    <button class="button" @click="format">
-                        Valid
-                    </button>
-                </div>
-                <h4 class="title is-4 mtb-2 has-text-centered">Preview</h4>
-                <div class="box mtb-2">
-                    <tree-view :data="jdata" :options="options"></tree-view>
-                </div>
                 <div>
                     <h4 class="title is-4 mtb-2">About</h4>
                     <p></p>
@@ -98,7 +100,7 @@
                 options: {
                     maxDepth: 4,
                     rootObjectKey: "root",
-                    modifiable: true
+                    modifiable: false
                 },
                 columns: [
                     {
