@@ -14,30 +14,43 @@
             </ul>
         </nav>
         <div class="is-full">
-            <h1 class="title is-5">JSON Editor</h1>
-            <b-field>
-                <p class="control">
-                    <b-tooltip label="Decrease Indent">
-                        <button class="button" @click="changeIndent('giam')">
-                            <b-icon pack="fa" icon="angle-double-left"></b-icon>
-                        </button>
-                    </b-tooltip>
-                </p>
-                <p class="control">
-                    <b-tooltip label="Increase Indent">
-                        <button class="button" @click="changeIndent('tang')">
-                            <b-icon pack="fa" icon="angle-double-right"></b-icon>
-                        </button>
-                    </b-tooltip>
-                </p>
-                <p class="control">
-                    <b-tooltip label="Beautifier">
-                        <button class="button" @click="format">
-                            <b-icon icon="format-align-left"></b-icon>
-                        </button>
-                    </b-tooltip>
-                </p>
-            </b-field>
+            <div class="columns is-multiline is-gapless">
+                <div class="column is-four-fifths">
+                    <h1 class="title is-5">JSON Editor | JSON Validator | JSON Formatter | Beautifier</h1>
+                </div>
+                <div class="column has-text-right">
+                    <b-field>
+                        <p class="control">
+                            <b-tooltip label="Decrease Indent">
+                                <button class="button" @click="changeIndent('giam')">
+                                    <b-icon pack="fa" icon="angle-double-left"></b-icon>
+                                </button>
+                            </b-tooltip>
+                        </p>
+                        <p class="control">
+                            <b-tooltip label="Increase Indent">
+                                <button class="button" @click="changeIndent('tang')">
+                                    <b-icon pack="fa" icon="angle-double-right"></b-icon>
+                                </button>
+                            </b-tooltip>
+                        </p>
+                        <p class="control">
+                            <b-tooltip label="Beautifier">
+                                <button class="button" @click="format">
+                                    <b-icon icon="format-align-left"></b-icon>
+                                </button>
+                            </b-tooltip>
+                        </p>
+                        <p class="control">
+                            <b-tooltip label="Validator">
+                                <button class="button" @click="format">
+                                    <b-icon icon="check"></b-icon>
+                                </button>
+                            </b-tooltip>
+                        </p>
+                    </b-field>
+                </div>
+            </div>
             <div class="editor">
                 <no-ssr placeholder="Loading...">
                     <codemirror v-model="code"
@@ -56,9 +69,28 @@
         </div>
         <div class="columns">
             <div class="column is-8">
-                <div>
+                <div class="content">
                     <h4 class="title is-4 mtb-2">About</h4>
-                    <p></p>
+                    <p>In computing, JavaScript Object Notation or JSON is an open-standard file format that uses
+                        human-readable text to transmit data objects consisting of attribute–value pairs and array data
+                        types.</p>
+                    <p>Json Editor was created by aiConverter.com to help developer make json easiest. You can format by
+                        using <b>Json Formater</b>, <b>Json Beautifier</b> (click to
+                        <b-icon icon="format-align-left"></b-icon>
+                        )
+                    </p>
+                    <h2 class="title is-3">Json Editor features:</h2>
+                    <ul>
+                        <li><b>JSON Pretty Print</b> / Pretty JSON Tool</li>
+                        <li>Minify/Compress your JSON.</li>
+                        <li>Validate your JSON and help you to fix an error.</li>
+                        <li>Once you have created JSON Data. You can download as a file or
+                            save as link and Share.
+                        </li>
+                        <li>Beautify/Format your JSON.</li>
+                        <li>Parse and Display your JSON in a tree view.</li>
+                        <li>JSON Viewer works well on Windows, MAC, Chrome, and Firefox.</li>
+                    </ul>
                     <h4 class="title is-4 mtb-2">Help</h4>
                     <b-table :data="data" :columns="columns"></b-table>
                     <p>Credit: <a href="http://codemirror.net/">@codemirror</a></p>
@@ -315,9 +347,12 @@
 
 <style lang="scss" scoped>
     .editor {
-        margin: 20px auto;
-        padding: 0px 0;
+        margin: 0 auto 20px;
+        padding: 0;
         text-align: left;
         max-width: 100%;
+    }
+    .columns.is-multiline.is-gapless {
+        margin-bottom: 0;
     }
 </style>

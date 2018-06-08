@@ -18,14 +18,17 @@
                 <section class="fantastic mtb-2">
                     <div class="wrapper">
                         <h1 class="title is-3">Json viewer</h1>
-                        <div class="field has-addons">
-                            <div class="control is-expanded">
-                                <input class="input" type="text" placeholder="Url api" v-model="url">
-                            </div>
-                            <div class="control">
-                                <button class="button is-info" @click="fetchSomething">View</button>
-                            </div>
-                        </div>
+                        <b-field>
+                            <b-input placeholder="http://ip.jsontest.com/"
+                                     type="URL"
+                                     icon="magnify"
+                                     v-model="url"
+                                     expanded>
+                            </b-input>
+                            <p class="control">
+                                <button class="button is-primary" @click="fetchSomething">View</button>
+                            </p>
+                        </b-field>
                         <p class="has-text-centered">OR</p>
                         <div class="control">
                             <div class="mtb-2">
@@ -38,8 +41,18 @@
                         </div>
                     </div>
                 </section>
-                <section class="has-text-left">
+                <section class="has-text-left content">
                     <h2 class="title is-3">Definetion</h2>
+                    <p>In computing, JavaScript Object Notation or JSON is an open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types.</p>
+                    <h2 class="title is-3">Json viewer features:</h2>
+                    <ul>
+                        <li>Once you have created JSON Data. You can download as a file or
+                            save as link and Share.
+                        </li>
+                        <li>Beautify/Format your JSON.</li>
+                        <li>Parse and Display your JSON in a tree view.</li>
+                        <li>JSON Viewer works well on Windows, MAC, Chrome, and Firefox.</li>
+                    </ul>
                     <h4 class="title is-5">Credit:</h4>
                     <p>This tool use <a href="https://www.npmjs.com/package/vue-json-tree-view">vue-json-tree-view</a>
                         by @arvidkahl</p>
@@ -70,7 +83,7 @@
         data: () => {
             return {
                 data: "{\"sample\": \"This is sample\"}",
-                url: "",
+                url: "http://ip.jsontest.com/",
                 options: {
                     maxDepth: 4,
                     rootObjectKey: "root",

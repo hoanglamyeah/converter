@@ -18,17 +18,29 @@
                 <section class="fantastic mtb-2">
                     <div class="wrapper">
                         <h1 class="title is-3">Json to XML</h1>
+                        <p>Thank for using!</p>
                         <div class="control">
                             <div class="mtb-2">
                                 <textarea class="textarea is-hovered" v-model="data" placeholder="Hovered textarea">
                                 </textarea>
                             </div>
-                            <pre v-highlightjs="xmlData"><code class="xml"></code></pre>
+                            <codemirror v-model="xmlData" :options="cmOption"></codemirror>
                         </div>
                     </div>
                 </section>
                 <section class="has-text-left">
                     <h2 class="title is-3">Definetion</h2>
+                    <h3 class="title is-4">What is json?</h3>
+                    <p>In computing, JavaScript Object Notation or JSON is an open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types.</p>
+                    <h3 class="title is-4">What is xml?</h3>
+                    <p>In computing, Extensible Markup Language is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.</p>
+                    <h3 class="title is-4">Why we need to convert JSON to XML</h3>
+                    <ul>
+                        <li>XPath/XQuery for extracting information in deeply nested structures.</li>
+                        <li>XSLT for transformation into different output formats</li>
+                        <li>XML Schema for datatype, structure validation. Makes it also possible to create new datatypes</li>
+                        <li>Generalized markup; it is possible to create "dialects" for any kind of purpose</li>
+                    </ul>
                 </section>
             </div>
             <sidebar></sidebar>
@@ -63,6 +75,15 @@
                     maxDepth: 4,
                     rootObjectKey: "root",
                     modifiable: true
+                },
+                cmOption: {
+                    tabSize: 4,
+                    styleActiveLine: true,
+                    lineNumbers: true,
+                    autoCloseTags: true,
+                    line: true,
+                    mode: 'text/html',
+                    theme: 'ambiance'
                 }
             }
         },
