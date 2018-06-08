@@ -425,7 +425,7 @@
                 "value": 1000,
                 "des": "Millimeter per hour. The SI measurement of speed and velocity. This is the number of meters travelled in one second of time. The accompanying acceleration unit is millimeters per hour (mm/s)."
             },
-            "mmpp": {
+            "mmpm": {
                 "id": "mmpm",
                 "name": "Millimeter per minute",
                 "value": 16.666666667,

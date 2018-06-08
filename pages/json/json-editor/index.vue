@@ -14,7 +14,30 @@
             </ul>
         </nav>
         <div class="is-full">
-            <h1 class="title is-3">JSON Editor</h1>
+            <h1 class="title is-5">JSON Editor</h1>
+            <b-field>
+                <p class="control">
+                    <b-tooltip label="Decrease Indent">
+                        <button class="button" @click="changeIndent('giam')">
+                            <b-icon pack="fa" icon="angle-double-left"></b-icon>
+                        </button>
+                    </b-tooltip>
+                </p>
+                <p class="control">
+                    <b-tooltip label="Increase Indent">
+                        <button class="button" @click="changeIndent('tang')">
+                            <b-icon pack="fa" icon="angle-double-right"></b-icon>
+                        </button>
+                    </b-tooltip>
+                </p>
+                <p class="control">
+                    <b-tooltip label="Beautifier">
+                        <button class="button" @click="format">
+                            <b-icon icon="format-align-left"></b-icon>
+                        </button>
+                    </b-tooltip>
+                </p>
+            </b-field>
             <div class="editor">
                 <no-ssr placeholder="Loading...">
                     <codemirror v-model="code"
@@ -25,14 +48,6 @@
                                 @blur="onCmBlur">
                     </codemirror>
                 </no-ssr>
-            </div>
-            <div class="action-bar mtb-2">
-                <button class="button" @click="format">
-                    Format
-                </button>
-                <button class="button" @click="format">
-                    Valid
-                </button>
             </div>
             <h4 class="title is-4 mtb-2 has-text-centered">Preview</h4>
             <div class="box mtb-2">
@@ -79,7 +94,7 @@
                 cmOption: {
                     smartIndent: true,
                     indentWithTabs: true,
-                    tabSize: 4,
+                    tabSize: 2,
                     styleActiveLine: true,
                     lineNumbers: true,
                     styleSelectedText: true,
@@ -113,7 +128,23 @@
                         label: 'Description',
                     }
                 ],
-                data: [{
+            }
+
+        },
+
+        computed: {
+            jdata() {
+                try {
+                    return JSON.parse(this.code)
+                }
+                catch (e) {
+                    console.log(e)
+                    return {sample: "This is sample"}
+                }
+            },
+
+            data() {
+                return [{
                     "key": "Ctrl-A (PC), Cmd-A (Mac)",
                     "des": "Select the whole content of the editor."
                 }, {
@@ -241,22 +272,25 @@
 
         },
 
-        computed: {
-            jdata() {
-                try {
-                    return JSON.parse(this.code)
-                }
-                catch (e) {
-                    console.log(e)
-                    return {sample: "This is sample"}
-                }
-            }
-        },
-
         methods: {
 
+            changeIndent(action) {
+                if (action === 'tang') {
+                    if (this.cmOption.tabSize > 5) {
+                        return
+                    }
+                    this.$set(this.cmOption, 'tabSize', this.cmOption.tabSize + 1)
+                } else {
+                    if (this.cmOption.tabSize < 0) {
+                        return
+                    }
+                    this.$set(this.cmOption, 'tabSize', this.cmOption.tabSize - 1)
+                }
+                this.format()
+            },
+
             format() {
-                this.code = js_beautify(this.code, {indent_size: 4});
+                this.code = js_beautify(this.code, {indent_size: this.cmOption.tabSize});
             },
 
             onCmCursorActivity(codemirror) {
@@ -272,6 +306,10 @@
                 console.log('onCmBlur', codemirror)
             }
         },
+
+        mounted() {
+            this.format()
+        }
     }
 </script>
 

@@ -26,7 +26,7 @@
                                 <input class="input" type="number" placeholder="1" v-model="fromData">
                             </p>
                             <p class="control">
-                                <button class="button"><i class="fas fa-random"></i></button>
+                                <button class="button"><i class="fa fa-random"></i></button>
                             </p>
                         </div>
                         <div class="field has-addons">
@@ -37,7 +37,7 @@
                                 <input class="input" type="number" placeholder="1" v-model="toData">
                             </p>
                             <p class="control">
-                                <button class="button"><i class="fas fa-random"></i></button>
+                                <button class="button"><i class="fa fa-random"></i></button>
                             </p>
                         </div>
                     </div>
