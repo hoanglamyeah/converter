@@ -61,10 +61,12 @@ module.exports = {
         'nuxt-buefy',
         '@nuxtjs/axios',
         'nuxt-robots-module',
+
     ],
     plugins: [
         '~plugins/component.js',
-        {src: '~plugins/nuxt-codemirror-plugin.js', ssr: false}
+        {src: '~plugins/nuxt-codemirror-plugin.js', ssr: false},
+        {src: '~plugins/ga.js', ssr: false}
     ],
 
     'nuxt-robots-module': [
