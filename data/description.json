@@ -472,5 +472,35 @@
     "json": {
         "name": "Json",
         "slug": "json"
+    },
+    "resolution": {
+        "name": "Resolution",
+        "slug": "resolution",
+        "data": {
+            "px": {
+                "name": "Pixel",
+                "id": "px",
+                "value": 1,
+                "des": "This example shows an image with a portion greatly enlarged, in which the individual pixels are rendered as small squares and can easily be seen. A photograph of sub-PIXEL display elements on a laptop's LCD screen In digital imaging, a pixel, pel, dots, or picture element is a physical point in a raster image, or the smallest addressable element in an all points addressable display device; so it is the smallest controllable element of a picture represented on the screen."
+            },
+            "cm": {
+                "name": "Centimeter",
+                "id": "cm",
+                "value": 1,
+                "des": "A centimetre (international spelling as used by the International Bureau of Weights and Measures; symbol cm) or centimeter (American spelling) is a unit of length in the metric system, equal to one hundredth of a metre, centi being the SI prefix for a factor of 1100."
+            },
+            "in": {
+                "name": "Inch",
+                "id": "in",
+                "value": 1,
+                "des": "The inch is a unit of length in the imperial and United States customary systems of measurement now formally equal to ​¹⁄₃₆ yard but usually understood as ​¹⁄₁₂ of a foot."
+            },
+            "em": {
+                "name": "EM",
+                "id": "em",
+                "value": 1,
+                "des": "An em is a unit in the field of typography, equal to the currently specified point size. For example, one em in a 16-point typeface is 16 points. Therefore, this unit is the same for all typefaces at a given point size."
+            }
+        }
     }
 }

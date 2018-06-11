@@ -45,7 +45,7 @@
                 <section class="has-text-left">
                     <h2 class="title is-3">How many {{to.name}} in a {{from.name}}</h2>
                     <p>1 {{from.name}} = {{percent}} {{to.name}}</p>
-                    <h2 class="title is-3">Definetion</h2>
+                    <h2 class="title is-3">Definition</h2>
                     <h3 class="title is-4">{{from.name}}</h3>
                     <p>{{from.des}}</p>
                     <h3 class="title is-4">{{to.name}}</h3>

@@ -66,7 +66,8 @@ module.exports = {
     plugins: [
         '~plugins/component.js',
         {src: '~plugins/nuxt-codemirror-plugin.js', ssr: false},
-        {src: '~plugins/ga.js', ssr: false}
+        {src: '~plugins/ga.js', ssr: false},
+        {src: '~plugins/dpi.js', ssr: false}
     ],
 
     'nuxt-robots-module': [
