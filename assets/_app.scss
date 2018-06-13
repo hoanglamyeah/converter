@@ -94,3 +94,11 @@ p.panel-tabs {
     border: 1px solid #eee;
     height: 400px!important;
 }
+
+.box.fantastic .title {
+    font-size: 1.5rem;
+}
+
+.button, .input, .textarea, .select select, .file-cta, .file-name, .pagination-previous, .pagination-next, .pagination-link, .pagination-ellipsis {
+    border-radius: 0;
+}

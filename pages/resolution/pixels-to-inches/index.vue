@@ -9,7 +9,7 @@
                     <nuxt-link to="/resolution">Resolution</nuxt-link>
                 </li>
                 <li class="is-active">
-                    <nuxt-link :to="'/resolution/'+ slug" aria-current="page">{{ title }}</nuxt-link>
+                    <nuxt-link to="/resolution/pixels-to-inches" aria-current="page">{{ title }}</nuxt-link>
                 </li>
             </ul>
         </nav>
@@ -112,7 +112,7 @@
             },
 
             title() {
-                return this.from.name + "s to " + this.to.name + "s Converter"
+                return this.from.name + "s to Inches Converter"
             },
 
             slug() {

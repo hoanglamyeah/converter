@@ -9,7 +9,7 @@
                     <nuxt-link to="/resolution">Resolution</nuxt-link>
                 </li>
                 <li class="is-active">
-                    <nuxt-link :to="'/resolution/'+ slug" aria-current="page">{{ title }}</nuxt-link>
+                    <nuxt-link to="/resolution/pixels-to-cm" aria-current="page">{{ title }}</nuxt-link>
                 </li>
             </ul>
         </nav>
