@@ -15,7 +15,7 @@
         </nav>
         <div class="columns">
             <div class="column is-8">
-                <section class="fantastic mtb-2 has-text-left">
+                <section class="fantastic mtb-2 has-text-left primary">
                     <div class="wrapper">
                         <h1 class="title is-3">{{title}}</h1>
                         <div class="columns">
@@ -103,11 +103,11 @@
 
         computed: {
             to() {
-                return ultil.getFrom(this.type, 'px-to-cm')
+                return ultil.getFrom(this.type, 'pixels-to-cm')
             },
 
             from() {
-                return ultil.getTo(this.type, 'px-to-cm')
+                return ultil.getTo(this.type, 'pixels-to-cm')
             },
 
             title() {

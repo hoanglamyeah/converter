@@ -57,7 +57,7 @@ p {
 }
 
 .fantastic .wrapper {
-    padding: 15px;
+    padding: 15px 50px;
 }
 
 .primary .control {
@@ -92,7 +92,7 @@ p.panel-tabs {
 
 .CodeMirror {
     border: 1px solid #eee;
-    height: 400px!important;
+    height: 400px !important;
 }
 
 .box.fantastic .title {
@@ -101,4 +101,24 @@ p.panel-tabs {
 
 .button, .input, .textarea, .select select, .file-cta, .file-name, .pagination-previous, .pagination-next, .pagination-link, .pagination-ellipsis {
     border-radius: 0;
+}
+
+.hero-body {
+    padding: 1rem 1.5rem;
+}
+
+h1 {
+    font-size: 22px!important;
+}
+
+h2 {
+    font-size: 20px!important;;
+}
+
+h3 {
+    font-size: 18px!important;;
+}
+
+h4 {
+    font-size: 16px!important;;
 }

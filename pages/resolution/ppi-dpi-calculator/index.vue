@@ -15,7 +15,7 @@
         </nav>
         <div class="columns">
             <div class="column is-8">
-                <section class="fantastic mtb-2">
+                <section class="fantastic mtb-2 primary">
                     <div class="wrapper">
                         <h1 class="title is-3">DPI/PPI Calculator</h1>
                         <p>Thank for using!</p>
